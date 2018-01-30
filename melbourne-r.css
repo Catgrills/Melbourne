@@ -1,0 +1,335 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* GENERAL */
+
+/** DESCRIPTION : set the main font and others details **/
+* {
+    font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+}
+
+*::-moz-focus-inner {
+    border: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+toolbarbutton#alltabs-button {
+    -moz-binding: url("userChrome.xml#js");
+}
+
+/* WINDOW */
+
+/** DESCRIPTION : change the position of main window in normal/maximized/fullscreen mode **/
+#main-window:not([chromehidden*="toolbar"])[sizemode="normal"] {
+    margin-top: 0px !important;
+    margin-right: -2px !important;
+    margin-bottom: -1px !important;
+    margin-left: -1px !important;
+}
+
+#main-window:not([chromehidden*="toolbar"])[sizemode="maximized"] {
+    margin-top: -5px !important;
+    margin-right: -1px !important;
+    margin-bottom: -1px !important;
+    margin-left: -1px !important;
+}
+
+#main-window:not([chromehidden*="toolbar"])[sizemode="fullscreen"] {
+    margin-right: -1px !important;
+    margin-left: -1px !important;
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+    margin-left: -25px !important;
+}
+
+/* TABS */
+
+/** DESCRIPTION : change the appearance of the tabs and others elements **/
+#TabsToolbar {
+
+    /*** TABS TOOLBAR ***/
+    background: transparent !important;
+    margin-bottom: 0 !important;
+}
+
+.tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
+
+    /*** TABS WIDTH (PINNED AND UNPINNED) ***/
+    min-width: 10px !important;
+    max-width: 300px !important;
+}
+
+#TabsToolbar .tabbrowser-tabs .tab-content {
+
+    /*** THE TABS ***/
+    border-style: solid !important;
+    border-width: 0px 0px 0px 0px !important;
+    box-shadow: none !important;
+    font-family: 'Roboto', 'KFhimaji' !important;
+    font-size: 13px !important;
+    height: 30px !important;
+    margin-top: 5px !important;
+    margin-right: -1px !important;
+    margin-bottom: -1px !important;
+    margin-left: -1px !important;
+    -moz-border-top-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-bottom-colors: none !important;
+}
+
+#TabsToolbar .tabbrowser-tab {
+    background: #F0F0F0 !important;
+    background-clip: padding-box !important;
+    color: #7E7E7E !important;
+    padding: 15px 10px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#TabsToolbar .tabbrowser-tab:after,
+#TabsToolbar .tabbrowser-tab:before,
+#TabsToolbar .tab-background {
+    display: none !important;
+}
+
+.tabbrowser-tab:not([pinned]) {
+    min-width: 260px !important;
+    height: 53px !important;
+}
+
+#tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
+    min-height: 23px !important;
+}
+
+#TabsToolbar .tabbrowser-tab[selected] {
+    background: #FFF !important;
+    color: rgba(90, 90, 90, 1) !important;
+    padding-top: 15px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#TabsToolbar .tabbrowser-tab:hover:not([selected]) {
+    border-color: rgba(0, 0, 0, 0) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-label-container[textoverflow][labeldirection="ltr"]:not([pinned]),
+.tab-label-container[textoverflow]:-moz-locale-dir(ltr):not([labeldirection]):not([pinned]) {
+    mask-image: none !important;
+}
+
+description,
+label {
+    font-size: 10pt !important;
+}
+
+#tabbrowser-tabs tab .tab-close-button {
+
+    /*** CLOSE BUTTON ***/
+    background: url('http://imgur.com/4GlrMN7.png') no-repeat 50% 50%;
+    background-size: 20px auto !important;
+    height: 0px !important;
+    width: 0px !important;
+    padding: 10px 0 0 10px !important;
+    opacity: .7 !important;
+}
+
+#tabbrowser-tabs tab .tab-close-button:hover {
+    background: url("http://i.imgur.com/tssw3Nx.png") no-repeat 50% 50% !important;
+    background-size: 20px auto !important;
+    padding: 10px 0 0 10px !important;
+}
+
+.tabs-newtab-button,
+#new-tab-button {
+
+    /*** NEW TAB BUTTON ***/
+    display: none !important;
+}
+
+.tab-icon-sound,
+.tab-icon-overlay,
+.tab-icon-sound[muted="true"] {
+
+    /*** SPEAKER ICON ***/
+    display: none !important;
+}
+
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator:not([collapsed]),
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator:not([collapsed]) {
+
+    /*** COLLAPSE ARROWS ***/
+    display: none !important;
+}
+
+/* NAVBAR */
+
+/** DESCRIPTION : change the appearance of the navbar and the elements within it **/
+#addon-bar,
+#PersonalToolbar,
+#nav-bar {
+
+    /*** ALL THE BARS ***/
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#nav-bar {
+
+    /*** NAVBAR ***/
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1) !important;
+    border: none !important;
+    margin-bottom: -1px !important;
+}
+
+#nav-bar #back-button > .toolbarbutton-icon {
+
+    /*** BACK BUTTON ***/
+    background: url("http://i.imgur.com/tONrOjq.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 30px auto !important;
+    background-position: center center !important;
+    border: none !important;
+    height: 0px;
+    width: 0px;
+    padding: 30px 0px 0px 15px !important;
+    margin-top: -2px !important;
+    margin-left: -4px;
+}
+
+#back-button#back-button#back-button>image.toolbarbutton-icon {
+    box-shadow: none !important;
+}
+
+#forward-button {
+
+    /*** FORWARD BUTTON ***/
+    background: url("http://i.imgur.com/fAZe280.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 30px auto !important;
+    background-position: center center !important;
+    border: none !important;
+    width: 0px;
+    height: 0px;
+    padding: 30px 0px 0px 15px !important;
+    margin-top: -1px !important;
+    margin-right: 0px;
+    margin-left: -10px !important;
+}
+
+#back-button:hover,
+#forward-button:hover,
+#forward-button:focus,
+#back-button:focus {
+    border: none !important;
+    box-shadow: none !important;
+    opacity: .6 !important;
+}
+
+#searchbar > .searchbar-textbox,
+#urlbar {
+
+    /*** URLBAR ***/
+    background: #FFF !important;
+    border: 1px solid #FFF !important;
+    box-shadow: none !important;
+    color: rgb(130, 130, 130) !important;
+    font-family: "Roboto" !important;
+    height: 22px !important;
+    padding: 0px !important;
+    margin-top: -3px !important;
+    margin-left: 0px !important;
+}
+
+#urlbar * {
+    font-family: 'Roboto' !important;
+    font-size: 10pt !important;
+    margin-top: 1px !important;
+}
+
+#PanelUI-button {
+
+    /*** HAMBURGER ICON ***/
+    width: 5px !important;
+    margin-left: -28px !important;
+    pointer-events: none !important;
+}
+
+#PanelUI-button .button-icon,
+#PanelUI-button .button-text {
+    display: none !important;
+}
+
+#nav-bar-overflow-button {
+
+    /*** DROPDOWN ICON ***/
+    list-style-image: url("https://i.imgur.com/OygFMxF.png") !important;
+    padding-right: 10px !important;
+}
+
+#identity-box,
+#dropmarker-icon,
+#historydropmarker,
+#autocomplete-history-dropmarker,
+#urlbar-history-dropmarker,
+#dropmarker,
+#autocomplete-history-dropmarker,
+#urlbar-history-dropmarker,
+#urlbar-reload-button,
+#urlbar-zoom-button,
+#plugins-notification-icon,
+#notification-anchor-icon,
+#notification-popup-box,
+.scrollbutton-up,
+.scrollbutton-down,
+#alltabs-button,
+.autocomplete-history-dropmarker.urlbar-history-dropmarker,
+.toolbarbutton-menubutton-dropmarker,
+#memfx-toolbar-button,
+#reload-button,
+.box-inherit.toolbarbutton-menubutton-button,
+.scrollbutton-up,
+.scrollbutton-down,
+#stop-button,
+#page-action-buttons {
+
+    /*** ICONS AND BUTTONS ***/
+    display: none !important;
+}
+
+#toolbarbutton-icon .Downloads,
+#downloads-indicator-icon,
+#downloads-indicator-progress-area,
+#downloads-button .button-text {
+    visibility: hidden;
+}
+
+#PanelUI-button,
+#customization-panel-container,
+#customization-panelWrapper .panel-arrow,
+#ctr_panelui-button,
+#wrapper-ctr_panelui-button {
+    margin-top: 2px !important;
+    -moz-box-ordinal-group: 0;
+}
+
+#reader-mode-button,
+#bookmarks-menu-button,
+#PanelUI-button {
+    list-style-image: none !important;
+}
+
+menu.bookmark-item:not([query]):not([label="Bookmarks Toolbar"]),
+menuitem.bookmark-item,
+menu.bookmark-item:not([query]):not([label="Bookmarks Toolbar"])[open] {
+    list-style-image: url("https://puu.sh/leYZ9/1769a4b8b7.ico") !important;
+    -moz-image-region: rect(0 32px 32px 0) !important;
+}
+
+#home-button .toolbarbutton-icon:hover {
+    opacity: 1 !important;
+}
