@@ -25,8 +25,8 @@ Instruction
 <strong>Step 2 : Specific directory </strong>
 <ol>
 <li> Go to C:\Users\[NAME]\AppData\Roaming\Mozilla\Firefox\Profiles\[SOMETHING].default"</li>
-<li> Create a new folder and name it <i>chrome</i></i></li>
-<li> Move the file in the said folder</li>
+<li> Create a new folder and name it <i>chrome</i>.</li>
+<li> Move the file in the said folder.</li>
 </ol>
 
 <strong>Step 3 : Install the font </strong>
