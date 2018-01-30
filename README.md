@@ -18,7 +18,7 @@ Instruction
 <strong>Step 1 : Create the file</strong>
 
 <ol>
-<li>Create a file called <i>userchrome</li> and make sure that the extension is <i>.css</i></li>
+<li>Create a file called <i>userchrome</i> and make sure that the extension is <i>.css</i></li>
 <li>Copy/paste the code with a text editor and save.</li>
 </ol>
 
