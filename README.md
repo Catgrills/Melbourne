@@ -9,7 +9,7 @@ About
 
 <i>Melbourne-R</i> is an userchrome for </i>Firefox Mozilla</i>.
 
-UserChrome is a CSS file that can be used to change the way Mozilla applications' interfaces look. 
+UserChrome are CSS file that can be used to change the way Mozilla applications' interfaces look. 
 
 
 Instruction
@@ -20,6 +20,7 @@ Instruction
 <ol>
 <li>Create a file called <i>userchrome</li> and make sure that the extension is <i>.css</i></li>
 <li>Copy/paste the code with a text editor and save.</li>
+</ol>
 
 <strong>Step 2 : Specific directory </strong>
 <ol>
