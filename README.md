@@ -1,6 +1,6 @@
 # Melbourne-R
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1303.png)
+<img src="preview_melbourne-r.png" width="100%">
 
 Preview of <i>Melbourne-R</i>.
 
