@@ -30,7 +30,7 @@ toolbarbutton#alltabs-button {
 }
 
 #main-window:not([chromehidden*="toolbar"])[sizemode="maximized"] {
-	margin-top: -5px !important;
+	margin-top: -2px !important;
 	margin-right: -1px !important;
 	margin-bottom: -1px !important;
 	margin-left: -1px !important;
