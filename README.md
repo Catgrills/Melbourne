@@ -1,13 +1,13 @@
-# Melbourne-R
+# Melbourne
 
-<img src="preview_melbourne-r.png" width="100%">
+<img src="preview.png" width="100%">
 
-Preview of <i>Melbourne-R</i>.
+Preview of <i>Melbourne</i>.
 
 About
 -------------------------------
 
-<i>Melbourne-R</i> is an userchrome for </i>Firefox Mozilla</i>.
+<i>Melbourne</i> is an userchrome for </i>Firefox Mozilla</i>.
 
 UserChrome are CSS file that can be used to change the way Mozilla applications' interfaces look. 
 
