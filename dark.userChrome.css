@@ -30,6 +30,12 @@
 		overflow: auto;
 	}
 
+	#main-window:not([chromehidden*="toolbar"])[sizemode="normal"] {
+		margin-top: 0px !important;
+		margin-right: -2px !important;
+		margin-left: -1px !important;
+	}
+
 	#downloads-indicator-anchor,
 	.toolbarbutton-1 > .toolbarbutton-icon, 
 	.toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbarbutton-icon {
