@@ -39,7 +39,7 @@
 	#downloads-indicator-anchor,
 	.toolbarbutton-1 > .toolbarbutton-icon, 
 	.toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbarbutton-icon {
-    	filter: brightness(1) var(--invert) !important;
+    		filter: brightness(1) var(--invert) !important;
 	}
 
 	#PersonalToolbar .toolbarbutton-1:not([disabled="true"]):not([checked]):not([open]):not(:active):hover, 
