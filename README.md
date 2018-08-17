@@ -15,18 +15,23 @@ UserChrome are CSS file that can be used to change the way Mozilla applications'
 Instruction
 -------------------------------
 
-<strong>Step 1 : Create the file</strong>
-
+<strong>Step 1 : Create the file userChrome</strong>
 <ol>
 <li>Create a file called <i>userchrome</i> and make sure that the extension is <i>.css</i></li>
 <li>Copy/paste the code and save.</li>
 </ol>
 
-<strong>Step 2 : Specific directory </strong>
+<strong>Step 2 : Create the file userContent /strong>
+<ol>
+<li>Create a file called <i>userContent</i> and make sure that the extension is <i>.css</i></li>
+<li>Copy/paste the code and save.</li>
+</ol>
+
+<strong>Step 3 : Specific directory </strong>
 <ol>
 <li> Go to C:\Users\[NAME]\AppData\Roaming\Mozilla\Firefox\Profiles\[SOMETHING].default"</li>
 <li> Create a new folder and name it <i>chrome</i>.</li>
-<li> Move the file in the said folder.</li>
+<li> Move the files in the said folder.</li>
 </ol>
 
 <strong>Step 3 : Install the font </strong>
