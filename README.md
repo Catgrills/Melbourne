@@ -1,8 +1,14 @@
 # Melbourne
 
-<img src="preview.png" width="100%">
+<img src="preview_dark.png" width="100%">
 
-Preview of <i>Melbourne</i>.
+Preview of <i>Melbourne</i> (dark version).
+
+<img src="preview_light.png" width="100%">
+
+Preview of <i>Melbourne</i> (light version).
+
+:pushpin: The close button in the titlebar is only compatible with windows 10. The default min, max and close buttons will be visible in windows 7 and 8.
 
 About
 -------------------------------
