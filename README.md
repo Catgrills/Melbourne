@@ -34,7 +34,7 @@ Instruction
 <li> Move the files in the said folder.</li>
 </ol>
 
-<strong>Step 3 : Install the font </strong>
+<strong>Step 4 : Install the font </strong>
 
 I use several fonts for my userchrome.
 <ol>
@@ -42,7 +42,7 @@ I use several fonts for my userchrome.
 <li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
 </ol>
 
-<strong>Step 4 : Show your appreciation </strong>
+<strong>Step 5 : Show your appreciation </strong>
 <ol>
 <li>Feel free to comment this submission (critique, suggestion, compliment, etc).</li>
 <li>If you like my works, don't hesitate to watch me.</li>
