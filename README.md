@@ -27,7 +27,7 @@ Instruction
 <li>Copy/paste the code and save.</li>
 </ol>
 
-<strong>Step 2 : Create the file userContent /strong>
+<strong>Step 2 : Create the file userContent </strong>
 <ol>
 <li>Create a file called <i>userContent</i> and make sure that the extension is <i>.css</i></li>
 <li>Copy/paste the code and save.</li>
