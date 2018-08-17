@@ -1,0 +1,151 @@
+@-moz-document url("about:newtab"),
+url("about:home") {
+
+	/* COLORS */
+
+	/** DESCRIPTION : set the colors used **/ 
+	:root {
+		--card-bg: #F2F2F2 !important;
+		--main-bg: #F9F9FA !important;
+		--op-bg: rgba(242, 242, 242, .98);
+		--url-bg: #FFF !important;
+		--border-color: #E1E1E2 !important;
+		--primary-color: #212121 !important;
+		--invert: invert(0) !important;
+		--mascot: url("https://i.imgur.com/ux44P4Y.png") !important;
+	}
+
+	/* GENERAL */
+
+	/** DESCRIPTION : set the main font and others details **/
+	body {
+		background-color: var(--main-bg) !important;
+		background-image: var(--mascot) !important;
+		background-position: 98% bottom !important;
+		background-repeat: no-repeat !important;
+		background-size: 180px auto !important;
+	}
+
+	span {
+		color: var(--primary-color) !important;
+	}
+
+	#contentSearchDefaultEngineHeader,
+	.contentSearchOneOffsTable.contentSearchSuggestionsContainer,
+	.contentSearchSettingsButton {
+		display: none !important;
+	}
+
+	/* DIALOG */
+
+	/** DESCRIPTION : change the elements of the dialog **/
+	#onboarding-overlay {
+		background: var(--op-bg) !important;
+	}
+
+	#onboarding-overlay-dialog {
+	    background: var(--card-bg) !important;
+	}
+
+	#onboarding-overlay-dialog * {
+		color: var(--primary-color) !important;
+	}
+
+	#onboarding-skip-tour-button {
+		background: var(--url-bg) !important;
+		border-color: var(--border-color) !important;
+	}
+
+	#onboarding-overlay-close-btn {
+		filter: brightness(0) var(--invert) !important;
+	}
+
+	/* SETTINGS */
+
+	/** DESCRIPTION : change the elements of the settings **/
+	.icon.icon-settings {
+		filter: brightness(0) var(--invert) !important;
+	}
+
+	.prefs-button button:hover, 
+	.prefs-button button:focus {
+		background-color: transparent !important;
+	}
+
+	/* SEARCHBAR */
+
+	/** DESCRIPTION : change the elements of the searchbar **/
+	#newtab-search-text {
+		background: var(--url-bg) !important;
+		border: 1px solid var(--border-color) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		color: var(--primary-color) !important;
+	}
+
+	.search-wrapper input:focus {
+		box-shadow: none !important;
+	}
+
+	#searchSubmit {
+		filter: brightness(0) var(--invert) !important;
+	}
+
+	.contentSearchSuggestionsContainer {
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+		padding: 5px !important;
+	}
+
+	.contentSearchSuggestionRow.formHistory {
+		background: transparent !important;
+	}
+
+	.contentSearchSuggestionsContainer * {
+		font-size: 12pt !important;
+	}
+
+	/* SECTION */
+
+	/** DESCRIPTION : change the elements of the section **/
+	.collapsible-section.active {
+		background: transparent !important;
+	}
+
+	.context-menu > ul {
+		background: var(--card-bg) !important;
+	}
+
+	.context-menu > ul > li.separator {
+		border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.collapsible-section .icon {
+		filter: brightness(0) var(--invert) !important;
+	}
+
+	/* CARD */
+
+	/** DESCRIPTION : change the elements of the cards **/
+	.card-outer {
+		background: var(--card-bg) !important;
+	}
+
+	.card-outer .card {
+		background: var(--card-bg) !important;
+		border-radius: 4px !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .2) !important;
+	}
+
+	.card-outer .card * {
+		color: var(--primary-color) !important;
+	}
+
+	.card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) {
+    	box-shadow: 0 0 0 5px var(--border-color) !important;
+	}
+
+	.card-outer .context-menu-button {
+		background: var(--border-color) !important;
+	}
+}
