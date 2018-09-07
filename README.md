@@ -13,7 +13,7 @@ Preview of <i>Melbourne</i> (light version).
 About
 -------------------------------
 
-<i>Melbourne</i> is an userchrome for </i>Firefox Mozilla</i>.
+<i>Melbourne</i> is a userchrome for </i>Firefox Mozilla</i>.
 
 UserChrome are CSS file that can be used to change the way Mozilla applications' interfaces look. 
 
