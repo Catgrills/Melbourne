@@ -64,8 +64,8 @@
 	.tabs-newtab-button,
 	#TabsToolbar .tabbrowser-tab:after,
 	#TabsToolbar .tabbrowser-tab:before,
-	#titlebar-min,
-	#titlebar-max,
+	.titlebar-min,
+	.titlebar-max,
 	.titlebar-placeholder[type="pre-tabs"] {
 		display: none !important;
 	}
@@ -216,13 +216,13 @@
 		opacity: .5 !important;
 	}
 
-	#titlebar-close {
+	.titlebar-close {
 
 		/*** TABBAR CLOSE BUTTON ***/
 		list-style-image: url("https://i.imgur.com/qzZ5RJH.png") !important;
 	}
 
-	#titlebar-close:hover {
+	.titlebar-close:hover {
 		background-color: transparent !important;
 		opacity: .5 !important;
 	}
