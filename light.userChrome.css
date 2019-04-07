@@ -119,6 +119,12 @@
 		padding: 0 !important;
 	}
 
+	#BMB_bookmarksPopup * {
+		background: var(--nav-bg) !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
 	/* TOOLBAR */
 
 	/** DESCRIPTION : change the elements in the toolbar **/
