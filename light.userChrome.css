@@ -34,10 +34,6 @@
 		-moz-binding: url("userChrome.xml#js");
 	}
 
-	html#main-window[sizemode="normal"] {
-    	margin-top: 5px !important;
-	}
-
 	#downloads-indicator-anchor,
 	.toolbarbutton-1 > .toolbarbutton-icon, 
 	.toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbarbutton-icon {
@@ -136,9 +132,9 @@
 	}
 
 	#navigator-toolbox toolbar #menubar-items {
-	    margin-top: 10px !important;
-	    margin-bottom: 10px !important;
-	    margin-left: 10px !important;
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+		margin-left: 10px !important;
 	}
 
 	#navigator-toolbox toolbar #menubar-items * {
@@ -187,18 +183,18 @@
 	.tab-content[pinned] {
 
 		/*** TABBAR TABS PINNED ***/
-	    width: 52px !important;
-	    text-indent: 20px !important;
+		width: 58px !important;
+		text-indent: 20px !important;
 	}
 
 	.tab-content[pinned] .tab-icon-image {
-    	margin-left: 5px !important;
+    		margin-left: 8px !important;
 	}
 
 	.tab-label-container {
 
 		/*** TABBAR TABS CONTENT ***/
-	    font-size: 10pt !important;
+	    	font-size: 10pt !important;
 	}
 
 	.tab-content {
@@ -312,10 +308,10 @@
 
 
 		/*** NAVBAR URL BAR ***/
-	    background: transparent !important;
-	    border: none !important;
-	    box-shadow: none !important;
-	    color: #212121 !important;
+		background: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
+		color: #212121 !important;
 	}
 
 	.urlbarView-body-inner {
@@ -326,8 +322,8 @@
 	}
 
 	.urlbar-textbox-container {
-	    margin-top: -1px !important;
-	    margin-left: 5px !important;
+		margin-top: -1px !important;
+		margin-left: 5px !important;
 	}
 
 	.urlbarView {
@@ -343,7 +339,7 @@
 	#nav-bar-overflow-button {
 
 		/*** NAVBAR ADDON BUTTON ***/
-    	margin-right: 5px !important;
+    		margin-right: 5px !important;
 	}
 
 	:root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #PanelUI-button {
@@ -400,7 +396,7 @@
 	}
 
 	#sidebar-box {
-	    background-color: #FFF !important;
+	    	background-color: #FFF !important;
 	}
 
 	hbox#sidebar-search-container textbox#search-box {
@@ -413,8 +409,8 @@
 
 	.sidebar-placesTreechildren,
 	#viewButton {
-	    color: #212121 !important;
-	    font-size: 10pt !important;
+		color: #212121 !important;
+		font-size: 10pt !important;
 	}
 
 	.sidebar-placesTreechildren:hover {
