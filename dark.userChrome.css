@@ -357,6 +357,41 @@
 		filter: brigthness(1) invert(1) !important;
 	} 
 
+	/* FINDBAR */
+
+	/** DESCRIPTION : change the elements of the find bar **/
+	findbar {
+    		border-top: 1px solid #000 !important;
+	}
+
+	.findbar-container {
+    		background: #2A2A2E !important;
+	}
+
+	.findbar-closebutton.close-icon {
+		background: #2A2A2E !important;
+		fill: #FFF !important;
+	}
+
+	input.findbar-textbox,
+	input.findbar-textbox:focus {
+		background: #222225 !important;
+		border: 1px solid #000 !important;
+		color: #FFF !important;
+	}
+
+	.findbar-find-previous.tabbable, 
+	.findbar-find-next.tabbable {
+		background: #1B1B1D !important;
+		border: 1px solid #000 !important;
+		fill: #FFF !important;
+		margin-left: -1px !important;
+	}
+
+	.findbar-button {
+    		color: #FFF !important;
+	}
+
 	/* HISTORY */
 
 	/** DESCRIPTION : change the elements of the history sidebar **/
