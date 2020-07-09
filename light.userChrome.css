@@ -170,11 +170,6 @@
 		background: #F0F0F0 !important;
 		color: #212121 !important;
 		height: 56px !important;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.tabbrowser-tab:hover {
-		transition: none !important;
 	}
 
 	.tab-background[selected="true"] {
